@@ -32,20 +32,20 @@ group :development, :test do
   gem 'hirb' # コンソール上でモデルを整形して出力
   gem 'hirb-unicode' #上記の文字化け防止
   gem 'rails-erd' # すべての関係を図にしてpdfファイルで出力してくれる
-  # gem 'rspec-rails', '~> 3.0.0.beta', github: 'rspec/rspec-rails'
-  # gem 'rspec-core', '~> 3.0.0.beta', github: 'rspec/rspec-core'
-  # gem 'rspec-expectations', '~> 3.0.0.beta', github: 'rspec/rspec-expectations'
-  # gem 'rspec-mocks', '~> 3.0.0.beta', github: 'rspec/rspec-mocks'
-  # gem 'rspec-support', '~> 3.0.0.beta', github: 'rspec/rspec-support'
-  # gem 'factory_girl_rails', '~> 4.4.1'
+  gem 'rspec-rails'
+  # gem 'rspec-core'
+  # gem 'rspec-expectations'
+  # gem 'rspec-mocks'
+  # gem 'rspec-support'
+  gem 'factory_girl_rails'
 end
 
-# group :test do
-#   gem 'shoulda-matchers', '~> 2.6.0'
-#   gem 'capybara', '~> 2.2.1'
-#   gem 'poltergeist', '~> 1.5.0'
-#   gem 'database_cleaner', '~> 1.2.0'
-# end
+group :test do
+  gem 'shoulda-matchers'
+  # gem 'capybara', '~> 2.2.1'
+  # gem 'poltergeist', '~> 1.5.0'
+  # gem 'database_cleaner', '~> 1.2.0'
+end
 
 # group :staging, :production do
 #   gem 'unicorn'
