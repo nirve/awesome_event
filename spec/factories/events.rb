@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
   factory :event do
@@ -9,8 +10,8 @@ FactoryGirl.define do
     start_time { rand(1..30).days.from_now }
     end_time { start_time + rand(1..30).hours }
 
-    # factory :invalid_event do
-    #   name { nil }
-    # end
+    factory :invalid_event do
+      name { nil }
+    end
   end
 end
